@@ -5,7 +5,7 @@ import 'package:cars/pages/newhome_page.dart';
 import 'package:cars/pages/settings_page.dart';
 import 'package:cars/pages/sign_up_page.dart';
 import 'package:cars/pages/user_info_page.dart';
-import 'package:cars/pages/verify_email_page.dart';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'splash_screen.dart';
@@ -47,9 +47,9 @@ class MyApp extends StatelessWidget {
         '/authstate': (context) => const AuthState(),
         '/settings': (context) => const SettingsPage(),
         '/newhomepage': (context) => const NewhomePage(),
-        '/userinfo': (context) => const UserInfoPage(),
-        '/verify-email': (context) => const VerifyEmailPage()
+        '/userinfo': (context) => const UserInfoPage()
       },
     );
   }
 }
+
