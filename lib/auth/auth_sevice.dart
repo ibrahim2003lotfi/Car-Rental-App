@@ -88,14 +88,5 @@ class AuthSevice {
   await currentUser!.verifyBeforeUpdateEmail(newEmail);
   // Tip: Firebase may send a verification link to confirm the new email.
 }
+}
 
-Future<void> sendEmailVerification() async {
-  try {
-    await currentUser!.sendEmailVerification();
-    debugPrint('Verification email sent to ${currentUser!.email}');
-  } catch (e) {
-    debugPrint('Error sending verification email: $e');
-    rethrow; // This will let you see the error in your UI
-  }
-}
-}
