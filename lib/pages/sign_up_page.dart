@@ -50,7 +50,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
       await authService.value.showUesrName(firstname: firstNameController.text);
 
-      await authService.value.sendEmailVerification();
+      
 
       if (mounted) {
         Navigator.pushReplacementNamed(
@@ -379,3 +379,4 @@ class _SignUpPageState extends State<SignUpPage> {
     );
   }
 }
+
